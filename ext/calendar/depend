@@ -1,0 +1,4 @@
+calendar.o: calendar.c calendar.h
+calendar2.o: calendar2.c calendar2.h
+calendarmodule.o: calendarmodule.c calendar.h calendar2.h qref.h
+qref.o: qref.c qref.h

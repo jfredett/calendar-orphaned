@@ -1,0 +1,96 @@
+暦計算モジュール
+================
+
+このパッケージには、3つの独立したモジュールがあります。
+
+
+"Calendar" モジュール
+---------------------
+
+これは様々な暦についての計算をあつかうモジュールです。暦の計算は
+``Calendrical Calculations''、および ``Calendrical Calculations, II:
+Three Historical Calendars'' にもとづいています。
+
+もとのコードとは、いくつか違うところがあります。ユリウス暦の4年は閏年に勘
+定していません。また、マヤ暦の暦元は紀元前3114年9月6日 (ユリウス暦)
+としています。もし、もとのコードと同じ結果を得たいのなら、"PAPER" を定義
+してください。
+
+また、上記のものに加え、いくつかの暦のためにコードを書きました (保証はで
+きないよ :-p)。
+
+このモジュールはつぎの暦をあつかいます:
+
+    グレゴリオ暦 (いわゆる新暦)、暦週 (ISO)、ユリウス暦 (欧州旧暦)、イス
+    ラム暦、ユダヤ暦、マヤ暦、フランス革命暦、旧ヒンドゥ、アケリスの世界
+    暦、コプト暦、エチオピア暦、ジャラリ暦 (不完全)、いわゆる旧暦 (年は西
+    暦)
+
+注意: このモジュールは、jd、および mjd を「年代学的」な感覚に基づいてあつ
+かうようになりました。
+
+
+"Getdate" モジュール
+--------------------
+
+このモジュールは、一般的な日付表現を咀嚼して、相当する Time オブジェクト
+を生成するメソッドを提供します。
+
+
+"Sdn" モジュール
+----------------
+
+これは Scott E. Lee による SDN パッケージへのインターフェイスです。
+
+このモジュールはつぎの暦をあつかいます:
+
+    グレゴリオ暦 (いわゆる新暦)、ユリウス暦 (欧州旧暦)、フランス革命暦、
+    ユダヤ暦
+
+
+インストール
+------------
+
+スクリプト "install.rb" をつかいます。
+
+  $ ruby install.rb config
+  $ ruby install.rb setup
+ ($ su)
+  # ruby install.rb install
+
+くわしくは、"ruby install.rb --help" としてください。
+
+
+謝辞
+----
+
+さまざまな暦計算のためのコードを書かれた Edward M. Reingold、
+Nachum Dershowitz、Stewart M. Clamen、Scott E. Lee 氏らに感謝します。
+
+
+参考文献
+--------
+
+Nachum Dershowitz and Edward M. Reingold, ``Calendrical Calculations'',
+Software---Practice & Experience, vol. 20, no. 9 (Sept. 1990), pp.
+899--928.
+
+Edward M. Reingold, Nachum Dershowitz and Stewart M. Clamen,
+``Calendrical Calculations, II: Three Historical Calendars''
+Software---Practice & Experience, vol. 23, no. 4 (April. 1993), pp.
+383--404.
+
+暦計算研究会編「新こよみ便利帳」恒星社厚生閣 1991
+
+野島寿三郎編「日本暦西暦月日対照表」日外アソシエーツ 1987,1996
+
+暦の会編「暦の百科事典」(新旧暦月日対照表:西沢利男)新人物往来社 1986,1989
+
+内田正男編著「日本暦日原典第四版」雄山閣出版 1975,1992
+
+日外アソシエーツ編集部編「21世紀暦」日外アソシエーツ 2000
+
+
+舟迫忠佳 (ふなばただよし)
+mailto:tadf@funaba.org
+http://www.funaba.org/

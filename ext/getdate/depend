@@ -1,0 +1,2 @@
+getdatemodule.o: getdatemodule.c getdate.h
+y.tab.o: y.tab.c getdate.h

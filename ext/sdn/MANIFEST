@@ -1,0 +1,10 @@
+MANIFEST
+depend
+dow.c
+extconf.rb
+french.c
+gregor.c
+jewish.c
+julian.c
+sdncal.h
+sdnmodule.c

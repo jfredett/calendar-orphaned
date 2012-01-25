@@ -1,0 +1,10 @@
+MANIFEST
+calendar.h
+calendar.c
+calendar2.c
+calendar2.h
+calendarmodule.c
+depend
+extconf.rb
+qref.c
+qref.h

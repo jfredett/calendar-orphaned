@@ -1,0 +1,5 @@
+MANIFEST
+extconf.rb
+getdate.c
+getdate.h
+getdatemodule.c

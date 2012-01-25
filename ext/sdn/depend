@@ -1,0 +1,6 @@
+dow.o: dow.c sdncal.h
+french.o: french.c sdncal.h
+gregor.o: gregor.c sdncal.h
+jewish.o: jewish.c sdncal.h
+julian.o: julian.c sdncal.h
+sdnmodule.o: sdnmodule.c sdncal.h

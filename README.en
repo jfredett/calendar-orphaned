@@ -1,0 +1,99 @@
+Calendrical calculation modules
+===============================
+
+There are three independent modules available in this package.
+
+
+A "Calendar" module
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+
+This module handles calculations about various calendars.  It is
+based on ‘‘Calendrical Calculations’’ and ‘‘Calendrical Calcula‐
+tions, II: Three Historical Calendars’’.
+
+This code is modified from the original code.  4 CE is not a leap
+year in the Julian calendar, and the Mayan calendar epoch is
+September 6, 3114 BCE in the Julian calendar.  Please define "PA‐
+PER" if you want to get the same results as the original.
+
+In addition to the above, I also wrote code for a few calendars
+(I can’t assure you that they’re right :‐p).
+
+This module supports the following calendars:
+
+    Gregorian (current civil), Calendar week (ISO), Julian (old
+    civil), Islamic (Moslem), Hebrew (Jewish), Mayan, French Rev‐
+    olutionary, Old Hindu, Achelis’, Coptic, Ethiopian, Jalaali
+    (incomplete), Kyureki (Japanese traditional with CE)
+
+NOTE: This module now handles jd and mjd based on "chronological"
+sense.
+
+
+A "Getdate" module
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+
+This module provides a method which creates a Time object re‐
+flecting the given representation of dates and times.
+
+
+An "Sdn" module
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+
+This is an interface to the Scott E. Lee’s SDN package.
+
+This module supports the following calendars:
+
+    Gregorian, Julian, French Republican, Jewish
+
+
+Install
+‐‐‐‐‐‐‐
+
+Use the script "install.rb".
+
+  $ ruby install.rb config
+  $ ruby install.rb setup
+ ($ su)
+  # ruby install.rb install
+
+For more information, type "ruby install.rb ‐‐help".
+
+
+Acknowledgments
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+
+I thank Edward M. Reingold, Nachum Dershowitz, Stewart M. Clamen
+and Scott E. Lee who wrote various calendrical code.
+
+
+References
+‐‐‐‐‐‐‐‐‐‐
+
+Nachum Dershowitz and Edward M. Reingold, ‘‘Calendrical Calcula‐
+tions’’ Software‐‐‐Practice & Experience, vol. 20, no.  9 (Sept.
+1990), pp. 899‐‐928.
+
+Edward M. Reingold, Nachum Dershowitz and Stewart M. Clamen,
+‘‘Calendrical Calculations, II: Three Historical Calendars’’
+Software‐‐‐Practice & Experience, vol. 23, no. 4 (April. 1993),
+pp. 383‐‐404.
+
+koyomi‐keisan kenkyu‐kai, shin koyomi benricho, koseisha ko‐
+seikaku, 1991
+
+jusaburo nojima, nihon‐reki sei‐reki tsuki‐hi taisho‐hyo, nichi‐
+gai associates, 1987,1996
+
+koyomi no kai, koyomi no hyakka‐jiten, shin jinbutsu oraisha,
+1986,1989
+
+masao uchida, nihon rekijitsu genten 4th ed, yuzan kaku,
+1975,1992
+
+nichigai associates, 21 seiki‐reki, nichigai associates 2000
+
+
+Tadayoshi Funaba
+mailto:tadf@funaba.org
+http://www.funaba.org/en/

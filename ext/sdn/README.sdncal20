@@ -1,0 +1,31 @@
+This package contains the source code of C language functions for date
+arithmetic and for converting between the following calendar types:
+
+    Gregorian
+    Julian
+    French Republican
+    Jewish
+
+Other calendars may be supported in the future.  Let me know what other
+calendars you would like to see added.
+
+There are also verification programs for each calendar (file names starting
+with "v").
+
+There are general comments about using the software in the header file
+(sdncal.h) and specific comments on each calendar in its source code file
+(e.g., julian.c).
+
+If you find bugs, have suggestions for improvement, etc., the author
+welcomes your comments:
+
+    Scott E. Lee
+    scottlee@pobox.com
+    lees@dg-rtp.dg.com
+    CompuServe: 74223,1301
+
+If you cannot find me at the above addresses, try looking for me in the
+Internet White Page Directory at:
+
+    http://www.Four11.com/
+
